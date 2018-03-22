@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 /**
  * Created by abhishek.raj on 22-03-2018.
@@ -96,6 +97,11 @@ public class SignUpActivity extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                  FirebaseUser user= auth.getCurrentUser();
+                                    UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.
+                                            Builder().setDisplayName("John Smith").build();
+
+                                    user.updateProfile(profileUpdates);
+
                                     Toast.makeText(SignUpActivity.this, "Authentication Successful." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                     finish();
