@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 /**
  * Created by abhishek.raj on 22-03-2018.
@@ -104,7 +106,13 @@ public class LoginActivity extends AppCompatActivity {
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
+                                    FirebaseUser user= auth.getCurrentUser();
+                                    Log.i("Display Name=",""+user.getDisplayName());
+                                    Log.i("Display Email=",""+user.getEmail());
+                                    Log.i("Display uid meta=",""+user.getUid()+"metadata="+user.getMetadata());
+
                                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    intent.putExtra("user",user.getEmail());
                                     startActivity(intent);
                                     finish();
                                 }

@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 /**
  * Created by abhishek.raj on 22-03-2018.
@@ -94,9 +95,12 @@ public class SignUpActivity extends AppCompatActivity {
                                     Toast.makeText(SignUpActivity.this, "Authentication failed." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
-                                    startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+                                 FirebaseUser user= auth.getCurrentUser();
                                     Toast.makeText(SignUpActivity.this, "Authentication Successful." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
+                                    finish();
+                                    //startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+
                                     finish();
                                 }
                             }
