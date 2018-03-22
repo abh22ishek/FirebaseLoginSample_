@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "113907312741",
+    "firebase_url": "https://fir-loginsample-cc39d.firebaseio.com",
+    "project_id": "fir-loginsample-cc39d",
+    "storage_bucket": "fir-loginsample-cc39d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113907312741:android:4fa6e2e9068748e7",
+        "android_client_info": {
+          "package_name": "abhishek.com.firebasesampleloginauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113907312741-8cg7piq20uoedis3h667h9odkl63e1c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCUwgtLmL2SzbqsUJEsgHlduUImp1EcPU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
