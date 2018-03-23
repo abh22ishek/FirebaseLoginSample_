@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     FirebaseAuth.getInstance().signOut();
                     Toast.makeText(MainActivity.this,"sign Out Successful",Toast.LENGTH_SHORT).show();
-                    finish();
+                    finishAffinity();
 
                 }catch (Exception e){
                     Toast.makeText(MainActivity.this,"Unable to SignOut",Toast.LENGTH_SHORT).show();
@@ -41,10 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if(getIntent().getExtras().getString("user")!=null)
-        {
-            userId.setText("Welcome "+getIntent().getExtras().getString("user"));
-        }
+
 
 
     }

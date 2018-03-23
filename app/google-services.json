@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "113907312741-fq5tsme5god10p19uc6r644pnhbpopnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abhishek.com.firebasesampleloginauth",
+            "certificate_hash": "afef8529e59c65d361d490fc1f4bf4af689bbbaa"
+          }
+        },
+        {
           "client_id": "113907312741-8cg7piq20uoedis3h667h9odkl63e1c4.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,57 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113907312741-8cg7piq20uoedis3h667h9odkl63e1c4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113907312741:android:490d81131f61ea99",
+        "android_client_info": {
+          "package_name": "bpl.consumerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113907312741-eapl1smampag58nkk5lkg8eovnbd9vtl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bpl.consumerapp",
+            "certificate_hash": "afef8529e59c65d361d490fc1f4bf4af689bbbaa"
+          }
+        },
+        {
+          "client_id": "113907312741-8cg7piq20uoedis3h667h9odkl63e1c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCUwgtLmL2SzbqsUJEsgHlduUImp1EcPU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113907312741-8cg7piq20uoedis3h667h9odkl63e1c4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

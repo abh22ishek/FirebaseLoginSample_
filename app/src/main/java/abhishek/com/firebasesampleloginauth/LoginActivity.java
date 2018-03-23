@@ -111,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Log.i("Display Email=",""+user.getEmail());
                                     Log.i("Display uid meta=",""+user.getUid()+"metadata="+user.getMetadata());
 
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
                                     intent.putExtra("user",user.getEmail());
                                     startActivity(intent);
                                     finish();
